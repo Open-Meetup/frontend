@@ -12,6 +12,7 @@
     "react/jsx-filename-extension": ["error", { "extensions": [".tsx"] }],
     "react/jsx-props-no-spreading": "off",
     "react/jsx-no-literals": "off",
+    "react/require-default-props": "off",
     "arrow-body-style": ["error"],
     "import/order": [
       "error",
