@@ -1,0 +1,22 @@
+.header {
+  height: var(--headerHeight);
+  border-bottom: 1px dotted var(--grey);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  &__logo {
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    &-text {
+      margin-left: 8px;
+      color: var(--green);
+      span {
+        display: block;
+        color: var(--white);
+      }
+    }
+  }
+}

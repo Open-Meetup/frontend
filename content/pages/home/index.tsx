@@ -8,11 +8,7 @@ const cx = classnames.bind(style);
 
 const Home = () => (
   <div className={cx("home")}>
-    <header>Header</header>
-
-    <main className={cx("main")}>Main</main>
-
-    <footer className={cx("footer")}>Footer</footer>
+    <h1>HP</h1>
   </div>
 );
 
