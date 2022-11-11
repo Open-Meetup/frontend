@@ -1,0 +1,93 @@
+.user-status {
+  $self: &;
+  height: 100%;
+  width: 250px;
+  overflow: hidden;
+  position: relative;
+  &:hover {
+    #{$self}__unknown,
+    #{$self}__connect-wallet {
+      transform: translateY(-100%);
+    }
+  }
+  &__unknown,
+  &__connect-wallet,
+  &__wallet-connected {
+    transition: transform 150ms ease-in-out;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    color: var(--grey);
+    border: 1px dotted var(--grey);
+  }
+  &__connect-wallet {
+    justify-content: center;
+    color: var(--green);
+    border: 1px solid var(--green);
+  }
+  &__info {
+    margin-left: 16px;
+    flex-grow: 2;
+    font-size: 14px;
+    > * {
+      display: block;
+    }
+    &-actions {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &-disconnect,
+    &-profile {
+      color: var(--white);
+      margin-top: 8px;
+      text-decoration: underline;
+      font-size: 10px;
+    }
+    &-disconnect {
+      color: var(--red);
+    }
+  }
+
+  &__wallets {
+    border: 1px dotted var(--grey);
+    position: absolute;
+    right: 16px;
+    padding: 16px;
+    top: calc(var(--headerHeight) + 16px);
+
+    &-head {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 16px;
+    }
+    &-title,
+    &-close {
+      color: var(--grey);
+      font-weight: 400;
+      font-size: 14px;
+    }
+    &-close {
+      color: var(--red);
+      text-decoration: underline;
+    }
+
+    &-content {
+      display: flex;
+      flex-direction: row;
+      gap: 16px;
+    }
+    &-btn {
+      border: 1px solid var(--grey);
+      padding: 16px 32px;
+      &:hover {
+        color: var(--green);
+        border-color: var(--green);
+      }
+    }
+  }
+}

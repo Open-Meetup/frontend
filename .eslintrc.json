@@ -13,6 +13,8 @@
     "react/jsx-props-no-spreading": "off",
     "react/jsx-no-literals": "off",
     "react/require-default-props": "off",
+    "react/jsx-no-bind": "off",
+    "react/jsx-max-depth": "off",
     "arrow-body-style": ["error"],
     "import/order": [
       "error",
